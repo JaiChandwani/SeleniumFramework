@@ -6,12 +6,19 @@ import org.testng.Assert;
 
 public class LoginTest extends baseTest {
     @Test
-    public static void login(){
+    public static void login() throws InterruptedException {
 
-driver.findElement(By.xpath("//label[1]")).sendKeys("tani101");
-driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("12345678");
-driver.findElement(By.xpath("//button[@class='btn rounded-full btn-primary text-white']")).click();
-Assert.assertTrue(driver.findElement(By.xpath("//a[@class='flex justify-center md:justify-start']//*[name()='svg']")).isDisplayed());
+driver.findElement(By.xpath(loc.getProperty("Login"))).click();
+Thread.sleep(2000);
+driver.findElement(By.xpath(loc.getProperty("UserName"))).sendKeys(data.getProperty("UserName"));
+Thread.sleep(2000);
+driver.findElement(By.xpath(loc.getProperty("NextBtn"))).click();
+Thread.sleep(2000);
+driver.findElement(By.xpath(loc.getProperty("password"))).sendKeys(data.getProperty("password"));
+Thread.sleep(2000);
+driver.findElement(By.xpath(loc.getProperty("Signin"))).click();
+Thread.sleep(5000);
+Assert.assertTrue(driver.findElement(By.xpath(loc.getProperty("Logo"))).isDisplayed());
     }
 }
 
