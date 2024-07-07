@@ -15,7 +15,11 @@ public class baseTest {
     //    getting webDriver,properties,fileReader..
     public static WebDriver driver;
     public static Properties prop = new Properties();
+    public static Properties loc = new Properties();
+    public static Properties data = new Properties();
     public static FileReader fr;
+    public static FileReader fr1;
+    public static FileReader fr2;
 
     // SetUP Runs in starting of the test case.
     @BeforeTest
@@ -23,7 +27,11 @@ public class baseTest {
 //        Setting-up browser.
         if (driver == null) {
             fr = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configFiles\\config.properties");
+            fr1 = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configFiles\\locators.properties");
+            fr2= new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configFiles\\data.properties");
             prop.load(fr);
+            loc.load(fr1);
+            data.load(fr2);
             if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
