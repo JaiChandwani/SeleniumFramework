@@ -19,7 +19,7 @@ To get started with the Java Selenium Framework, follow these steps:
 1. **Prerequisites**: Ensure you have Java Development Kit (JDK) installed and configured on your system.
   
 2. **Clone the Repository**: Clone this repository to your local machine using Git:
-   git clone https://github.com/your-repository-url.git
+   git clone (https://github.com/JaiChandwani/SeleniumFramework.git)
 
 3. **Setup**: Configure your IDE (e.g., IntelliJ, Eclipse) to import the project as a Maven project.
 
@@ -48,3 +48,5 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 ## Acknowledgments
 
 - Special thanks to the Selenium and TestNG communities for their invaluable tools and resources.
+![image](https://github.com/JaiChandwani/SeleniumFramework/assets/92116987/ae396da6-3646-4cbf-bcf2-cc6c71e6a58b)
+
