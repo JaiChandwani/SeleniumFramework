@@ -41,9 +41,6 @@ The framework provides a set of utilities and helpers to assist you in writing a
 
 We welcome contributions to the Java Selenium Framework! If you find any issues or have suggestions for improvements, please submit a pull request or open an issue on GitHub.
 
-## License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
 
 ## Acknowledgments
 
