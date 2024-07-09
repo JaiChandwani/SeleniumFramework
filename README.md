@@ -35,7 +35,7 @@ The framework provides a set of utilities and helpers to assist you in writing a
 
 - **TestNG Integration**: Utilizes TestNG for test execution and management, leveraging its annotations for setup, teardown, and test case grouping.
 
-- **Reporting**: After test execution, detailed HTML reports are generated in the `target/surefire-reports` directory.
+- **Reporting**: After test execution, detailed HTML reports are generated in the `web/src/test/resources/testReport/index.html` directory.
 
 ## Contributing
 
