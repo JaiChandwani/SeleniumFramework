@@ -45,5 +45,5 @@ We welcome contributions to the Java Selenium Framework! If you find any issues 
 ## Acknowledgments
 
 - Special thanks to the Selenium and TestNG communities for their invaluable tools and resources.
-![image](https://github.com/JaiChandwani/SeleniumFramework/assets/92116987/ae396da6-3646-4cbf-bcf2-cc6c71e6a58b)
+
 
